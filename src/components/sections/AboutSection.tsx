@@ -131,7 +131,7 @@ const AboutSection = () => {
               <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-[180px] h-1 bg-gradient-to-r from-blue-400 to-purple-500"></span>
             </h2>
             <p className="text-lg leading-relaxed text-slate-300">
-              Hello! I'm Kristian, a passionate Full Stack Developer who loves building innovative web applications and
+              Hello! I&apos;m Kristian, a passionate Full Stack Developer who loves building innovative web applications and
               solving complex problems with code. With a strong foundation in both front-end and back-end technologies,
               I strive to create seamless, user-friendly experiences that make a difference.
             </p>
