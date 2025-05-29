@@ -32,3 +32,6 @@ export default function TypedText({ text, speed = 50, className = "" }: TypedTex
 
   return <span className={className}>{displayText}</span>
 }
+
+
+
