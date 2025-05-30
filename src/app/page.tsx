@@ -155,7 +155,7 @@ export default function HomePage() {
             <div className="absolute inset-0 bg-gradient-to-br from-blue-400/30 to-purple-500/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
             <Image
-              src="/images/profile.JPG?height=384&width=384"
+              src="/images/profile.jpg?height=384&width=384"
               alt="Kristian Bas"
               width={384}
               height={384}
