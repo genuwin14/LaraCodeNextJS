@@ -155,7 +155,7 @@ export default function HomePage() {
             <div className="absolute inset-0 bg-gradient-to-br from-blue-400/30 to-purple-500/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
             <Image
-              src="/images/profile.JPG?height=384&width=384"
+              src="/images/profile-two.JPG?height=384&width=384"
               alt="Kristian Bas"
               width={384}
               height={384}
@@ -170,9 +170,32 @@ export default function HomePage() {
 
           {/* Floating particles around image */}
           <div className="absolute inset-0 pointer-events-none">
+            {/* Floating dots for extra flair */}
             <div className="absolute top-0 left-1/4 w-4 h-4 rounded-full bg-blue-400 opacity-70 animate-float-slow"></div>
-            <div className="absolute bottom-1/4 right-0 w-3 h-3 rounded-full bg-purple-500 opacity-70 animate-float-medium"></div>
             <div className="absolute top-1/3 right-1/4 w-2 h-2 rounded-full bg-pink-400 opacity-70 animate-float-fast"></div>
+
+            {/* Floating tech stack icons */}
+            <div className="absolute bottom-1/4 right-0 w-8 h-8 animate-float-medium">
+              <Image src="/icons/github.svg" alt="GitHub" width={32} height={32} className="opacity-80" />
+            </div>
+            <div className="absolute top-1/2 left-1 w-6 h-6 animate-float-slow">
+              <Image src="/icons/javascript.svg" alt="JavaScript" width={32} height={32} className="opacity-80" />
+            </div>
+            <div className="absolute bottom-0 left-1/3 w-10 h-10 animate-float-medium">
+              <Image src="/icons/react.svg" alt="React" width={32} height={32} className="opacity-90" />
+            </div>
+            <div className="absolute top-10 right-1/3 w-6 h-6 animate-float-fast">
+              <Image src="/icons/python.svg" alt="Python" width={32} height={32} className="opacity-75" />
+            </div>
+            <div className="absolute bottom-10 right-1/2 w-8 h-8 animate-float-slow">
+              <Image src="/icons/laravel.svg" alt="Laravel" width={32} height={32} className="opacity-85" />
+            </div>
+            <div className="absolute top-2 left-2 w-6 h-6 animate-float-medium">
+              <Image src="/icons/mysql.svg" alt="MySQL" width={32} height={32} className="opacity-75" />
+            </div>
+            <div className="absolute bottom-5 left-5 w-5 h-5 animate-float-fast">
+              <Image src="/icons/php.svg" alt="PHP" width={32} height={32} className="opacity-80" />
+            </div>
           </div>
         </div>
       </section>

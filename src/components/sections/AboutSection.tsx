@@ -2,20 +2,6 @@
 
 import { useState, useRef, useEffect } from "react"
 import { motion } from "framer-motion"
-import {
-  Code,
-  Database,
-  Globe,
-  Layers,
-  Coffee,
-  Github,
-  Figma,
-  Server,
-  Smartphone,
-  Terminal,
-  Zap,
-  FileCode,
-} from "lucide-react"
 
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -44,20 +30,20 @@ const AboutSection = () => {
   }, [])
 
   const techStack = [
-    { name: "JavaScript", icon: <Code className="w-5 h-5 text-yellow-400" />, color: "border-yellow-400" },
-    { name: "Python", icon: <Terminal className="w-5 h-5 text-blue-500" />, color: "border-blue-500" },
-    { name: "React", icon: <Zap className="w-5 h-5 text-blue-400" />, color: "border-blue-400" },
-    { name: "Node.js", icon: <Server className="w-5 h-5 text-green-500" />, color: "border-green-500" },
-    { name: "Java", icon: <Coffee className="w-5 h-5 text-red-500" />, color: "border-red-500" },
-    { name: "Laravel", icon: <Globe className="w-5 h-5 text-red-600" />, color: "border-red-600" },
-    { name: "GitHub", icon: <Github className="w-5 h-5 text-gray-700" />, color: "border-gray-700" },
-    { name: "Bootstrap", icon: <Layers className="w-5 h-5 text-purple-600" />, color: "border-purple-600" },
-    { name: "CodeIgniter", icon: <FileCode className="w-5 h-5 text-orange-500" />, color: "border-orange-500" },
-    { name: ".NET", icon: <Smartphone className="w-5 h-5 text-blue-600" />, color: "border-blue-600" },
-    { name: "PHP", icon: <Code className="w-5 h-5 text-purple-500" />, color: "border-purple-500" },
-    { name: "MySQL", icon: <Database className="w-5 h-5 text-blue-700" />, color: "border-blue-700" },
-    { name: "Figma", icon: <Figma className="w-5 h-5 text-pink-500" />, color: "border-pink-500" },
-  ]
+    { name: "JavaScript", icon: "/icons/javascript.svg", color: "border-yellow-400", size: "w-12 h-12" },
+    { name: "Python", icon: "/icons/python.svg", color: "border-blue-500", size: "w-12 h-12" },
+    { name: "React", icon: "/icons/react.svg", color: "border-blue-400", size: "w-12 h-12" },
+    { name: "Node.js", icon: "/icons/node-js.svg", color: "border-green-500", size: "w-12 h-12" },
+    { name: "Java", icon: "/icons/java.svg", color: "border-red-500", size: "w-12 h-12" },
+    { name: "Laravel", icon: "/icons/laravel.svg", color: "border-red-600", size: "w-12 h-12" },
+    { name: "GitHub", icon: "/icons/github.svg", color: "border-gray-700", size: "w-12 h-12" },
+    { name: "Bootstrap", icon: "/icons/bootstrap.svg", color: "border-purple-600", size: "w-12 h-12" },
+    { name: "CodeIgniter", icon: "/icons/codeigniter.svg", color: "border-orange-500", size: "w-12 h-12" },
+    { name: ".NET", icon: "/icons/dotnet.svg", color: "border-blue-600", size: "w-12 h-12" },
+    { name: "PHP", icon: "/icons/php.svg", color: "border-purple-500", size: "w-12 h-12" },
+    { name: "MySQL", icon: "/icons/mysql.svg", color: "border-blue-700", size: "w-12 h-12" },
+    { name: "Figma", icon: "/icons/figma.svg", color: "border-pink-500", size: "w-12 h-12" },
+  ];   
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -154,7 +140,7 @@ const AboutSection = () => {
                     className={`flex items-center gap-3 p-3 rounded-lg bg-white/5 backdrop-blur-sm border-l-4 ${tech.color} shadow-lg hover:shadow-xl transition-all duration-300 group`}
                   >
                     <div className="p-2 rounded-md bg-white/10 group-hover:bg-white/20 transition-colors duration-300">
-                      {tech.icon}
+                      <img src={tech.icon} alt={tech.name + " icon"} className="w-7 h-7" />
                     </div>
                     <span className="text-xs font-medium">{tech.name}</span>
                   </motion.div>
