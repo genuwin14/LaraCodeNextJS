@@ -1,6 +1,6 @@
 "use client"
 
-import { SetStateAction, useState } from "react"
+import { useState } from "react"
 import Image from "next/image"
 import { X, ExternalLink, Github } from "lucide-react"
 
