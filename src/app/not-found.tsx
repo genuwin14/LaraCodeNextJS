@@ -92,7 +92,7 @@ const NotFound = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Service Under Construction</h2>
           <p className="text-xl text-gray-300 mb-6 leading-relaxed max-w-2xl mx-auto">
-            The service you're looking for is currently being built with care and attention to detail.
+            The service you&apos;re looking for is currently being built with care and attention to detail.
           </p>
 
           {/* Status Cards */}
