@@ -112,7 +112,7 @@ const AboutSection = () => {
         >
           {/* About Me Header */}
           <motion.div variants={itemVariants} className="space-y-3 text-center max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold relative inline-block">
+            <h2 className="text-4xl mb-6 font-bold relative inline-block">
               About Me
               <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-[180px] h-1 bg-gradient-to-r from-blue-400 to-purple-500"></span>
             </h2>

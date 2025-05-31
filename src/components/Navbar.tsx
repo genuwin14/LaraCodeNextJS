@@ -127,12 +127,12 @@ const Navbar = () => {
             </button>
 
             {servicesOpen && (
-              <div className="absolute right-0 mt-2 w-56 bg-gray-800 rounded-md shadow-lg py-2 z-50">
+              <div className="absolute right-0 mt-2 w-56 bg-white/10 backdrop-blur-md rounded-md shadow-lg py-2 z-50 border border-white/20">
                 {servicesItems.map((service) => (
                   <Link
                     key={service.href}
                     href={service.href}
-                    className="block px-4 py-2 text-white hover:bg-blue-600 transition-colors whitespace-nowrap"
+                    className="block px-4 py-2 text-white hover:bg-white/20 transition-colors whitespace-nowrap"
                     onClick={() => setServicesOpen(false)}
                   >
                     {service.label}
@@ -194,12 +194,12 @@ const Navbar = () => {
               </button>
 
               {servicesOpen && (
-                <div className="mt-2 pl-4 border-l border-gray-700">
+                <div className="mt-2 pl-4 border-l border-white/20">
                   {servicesItems.map((service) => (
                     <Link
                       key={service.href}
                       href={service.href}
-                      className="block px-2 py-1 text-white hover:bg-blue-600 rounded-md transition-colors whitespace-nowrap"
+                      className="block px-2 py-1 text-white hover:bg-white/20 rounded-md transition-colors whitespace-nowrap"
                       onClick={() => {
                         setServicesOpen(false);
                         setMobileMenuOpen(false);

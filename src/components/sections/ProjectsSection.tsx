@@ -13,7 +13,7 @@ const projects = [
     image: "/images/TechScan.png?height=200&width=350",
     longDescription:
       "TechScan is a Project developed at Camarines Polytechnic Colleges, focused on building a Smart Door Lock System that combines both software and hardware technologies. The system uses NFC card authentication integrated with a unique PIN code, providing a two-layer security feature for access control. Using the ACR122U NFC scanner, users can register their NFC cards into the system, pairing each with a specific PIN. When authenticated, the system communicates with a hardware device to trigger the door mechanism. A centralized dashboard displays real-time access logs, supports user registration, and generates detailed reports. TechScan demonstrates the practical integration of IoT, embedded hardware, and secure web-based systems.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
+    technologies: ["Laravel", "Bootstrap", "FullCalendar", "jsPDF", "MySQL"],
     demoUrl: "https://example.com/demo",
     githubUrl: "https://github.com/username/project",
   },
@@ -24,7 +24,7 @@ const projects = [
     image: "/images/SparkMe.png?height=200&width=350",
     longDescription:
       "SparkMe is a Project designed as an open-source educational website that offers a collection of readable files and digital books for users. To enhance engagement, the platform includes a built-in Tic Tac Toe game for users who might need a break or light entertainment. Each uploaded book or file can have an associated quiz module, allowing users to test their understanding and practice what they've learned. The system also features automated report generation, providing insights into user activity and quiz performance. SparkMe combines learning, interactivity, and open access—making education both accessible and enjoyable..",
-    technologies: ["React", "Firebase", "Redux", "Material UI", "Jest"],
+    technologies: ["Laravel", "Bootstrap", "FullCalendar", "jsPDF", "MySQL"],
     demoUrl: "https://example.com/demo",
     githubUrl: "https://github.com/username/project",
   },
@@ -35,7 +35,7 @@ const projects = [
     image: "/images/KeyCab.png?height=200&width=350",
     longDescription:
       "KeyCab is a Project developed to solve the recurring issue of unreturned laboratory keys. It features a web-based system integrated with a smart key cabinet powered by a Raspberry Pi microcontroller. The cabinet uses ID and PIN code authentication to control access, ensuring that only authorized users can borrow keys. Once a key is accessed, the system automatically records the transaction, logging who borrowed which key and when. With real-time tracking, smart lock integration, and a secure hardware setup, KeyCab enhances key management efficiency and accountability within school laboratories.",
-    technologies: ["React Native", "Node.js", "MongoDB", "Express", "Chart.js"],
+    technologies: ["Laravel", "Bootstrap", "FullCalendar", "jsPDF", "DataTables", "MySQL"],
     demoUrl: "https://example.com/demo",
     githubUrl: "https://github.com/username/project",
   },
@@ -72,7 +72,7 @@ const ProjectsSection = () => {
       className="min-h-screen flex flex-col justify-center max-w-6xl mx-auto px-4 py-16 space-y-8 scroll-section"
     >
       <div className="space-y-3 text-center animate-on-scroll">
-        <h2 className="text-4xl font-bold relative inline-block">
+        <h2 className="text-4xl font-bold mb-6 relative inline-block">
           My Recent Projects
           <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-[360px] h-1 bg-gradient-to-r from-blue-400 to-purple-500"></span>
         </h2>

@@ -56,7 +56,7 @@ export default function HomePage() {
   }, [])
 
   return (
-    <main className="w-full px-4 md:px-0">
+    <main className="w-full px-4 md:px-6 xl:px-12 overflow-x-hidden">
       <section
         id="home"
         className="min-h-screen flex flex-col items-center justify-center md:flex-row md:justify-between py-16 md:py-0 text-center md:text-left"
@@ -79,42 +79,42 @@ export default function HomePage() {
           {/* Social Icons */}
           <div className="flex space-x-5 justify-center md:justify-start">
             <a
-              href="#"
+              href="https://www.facebook.com/kristian.bas.10"
               className="hover:text-blue-600 transition-colors hover:scale-110 transform duration-300"
               aria-label="Facebook"
             >
               <Facebook size={24} />
             </a>
             <a
-              href="#"
+              href="https://instagram.com/mikami.satoruuuu"
               className="hover:text-pink-600 transition-colors hover:scale-110 transform duration-300"
               aria-label="Instagram"
             >
               <Instagram size={24} />
             </a>
             <a
-              href="#"
+              href="https://github.com/genuwin14"
               className="hover:text-gray-600 transition-colors hover:scale-110 transform duration-300"
               aria-label="Github"
             >
               <Github size={24} />
             </a>
             <a
-              href="#"
+              href="https://telegram.org"
               className="hover:text-blue-500 transition-colors hover:scale-110 transform duration-300"
               aria-label="Telegram"
             >
               <TelegramIcon />
             </a>
             <a
-              href="#"
+              href="https://wa.me/"
               className="hover:text-green-600 transition-colors hover:scale-110 transform duration-300"
               aria-label="WhatsApp"
             >
               <MessageCircle size={24} />
             </a>
             <a
-              href="#"
+              href="mailto:kristianbas14@gmail.com"
               className="hover:text-red-500 transition-colors hover:scale-110 transform duration-300"
               aria-label="Email"
             >

@@ -33,33 +33,36 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
   position: relative;
-  overflow-x: hidden;
+  overflow-x: hidden; /* 💡 Prevent horizontal scroll */
 }
 
-/* Animated background */
+/* Modified ::before */
 body::before {
   content: "";
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw; /* 🔧 Ensure it never exceeds viewport */
+  height: 100vh;
+  max-width: 100vw; /* 🚫 Avoid overflow */
   background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2), var(--gradient-3), var(--gradient-4));
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
   opacity: 0.1;
   z-index: -2;
   transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 
-/* Floating particles */
+/* Modified ::after */
 body::after {
   content: "";
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw; /* 🔧 Match viewport */
+  height: 100vh;
+  max-width: 100vw; /* ✅ Avoid expanding */
   background-image: radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
     radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
     radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.3) 0%, transparent 50%);
@@ -67,6 +70,7 @@ body::after {
   z-index: -1;
   opacity: 0.6;
   transition: transform 0.1s ease-out;
+  pointer-events: none;
 }
 
 /* Scroll-based parallax effect */
