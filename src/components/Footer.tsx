@@ -92,7 +92,7 @@ const Footer = () => {
             <div>
               <h5 className="text-base font-medium text-white mb-2">Kristian Bas</h5>
               <p className="text-gray-300 text-sm leading-relaxed">
-                <span className="font-medium text-blue-400">Collaboration:</span> Let's work together on exciting
+                <span className="font-medium text-blue-400">Collaboration:</span> Let&apos;s work together on exciting
                 projects! Feel free to reach out.
               </p>
             </div>
