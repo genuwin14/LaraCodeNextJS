@@ -30,19 +30,19 @@ const AboutSection = () => {
   }, [])
 
   const techStack = [
-    { name: "JavaScript", icon: "/icons/javascript.svg", color: "border-yellow-400", size: "w-12 h-12" },
-    { name: "Python", icon: "/icons/python.svg", color: "border-blue-500", size: "w-12 h-12" },
-    { name: "React", icon: "/icons/react.svg", color: "border-blue-400", size: "w-12 h-12" },
-    { name: "Node.js", icon: "/icons/node-js.svg", color: "border-green-500", size: "w-12 h-12" },
-    { name: "Java", icon: "/icons/java.svg", color: "border-red-500", size: "w-12 h-12" },
-    { name: "Laravel", icon: "/icons/laravel.svg", color: "border-red-600", size: "w-12 h-12" },
-    { name: "GitHub", icon: "/icons/github.svg", color: "border-gray-700", size: "w-12 h-12" },
-    { name: "Bootstrap", icon: "/icons/bootstrap.svg", color: "border-purple-600", size: "w-12 h-12" },
-    { name: "CodeIgniter", icon: "/icons/codeigniter.svg", color: "border-orange-500", size: "w-12 h-12" },
-    { name: ".NET", icon: "/icons/dotnet.svg", color: "border-blue-600", size: "w-12 h-12" },
-    { name: "PHP", icon: "/icons/php.svg", color: "border-purple-500", size: "w-12 h-12" },
-    { name: "MySQL", icon: "/icons/mysql.svg", color: "border-blue-700", size: "w-12 h-12" },
-    { name: "Figma", icon: "/icons/figma.svg", color: "border-pink-500", size: "w-12 h-12" },
+    { name: "JavaScript", icon: "/icons/javascript.svg", color: "border-yellow-400"},
+    { name: "Python", icon: "/icons/python.svg", color: "border-blue-500"},
+    { name: "React", icon: "/icons/react.svg", color: "border-blue-400"},
+    { name: "Node.js", icon: "/icons/node-js.svg", color: "border-green-500"},
+    { name: "Java", icon: "/icons/java.svg", color: "border-red-500"},
+    { name: "Laravel", icon: "/icons/laravel.svg", color: "border-red-600"},
+    { name: "GitHub", icon: "/icons/github.svg", color: "border-gray-700"},
+    { name: "Bootstrap", icon: "/icons/bootstrap.svg", color: "border-purple-600"},
+    { name: "CodeIgniter", icon: "/icons/codeigniter.svg", color: "border-orange-500"},
+    { name: ".NET", icon: "/icons/dotnet.svg", color: "border-blue-600"},
+    { name: "PHP", icon: "/icons/php.svg", color: "border-purple-500"},
+    { name: "MySQL", icon: "/icons/mysql.svg", color: "border-blue-700"},
+    { name: "Figma", icon: "/icons/figma.svg", color: "border-pink-500"},
   ];   
 
   const containerVariants = {
@@ -139,8 +139,13 @@ const AboutSection = () => {
                     whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
                     className={`flex items-center gap-3 p-3 rounded-lg bg-white/5 backdrop-blur-sm border-l-4 ${tech.color} shadow-lg hover:shadow-xl transition-all duration-300 group`}
                   >
-                    <div className="p-2 rounded-md bg-white/10 group-hover:bg-white/20 transition-colors duration-300">
-                      <img src={tech.icon} alt={tech.name + " icon"} className="w-7 h-7" />
+                    <div className="p-2 rounded-md bg-white/10 group-hover:bg-white/20 transition-colors duration-300 flex items-center justify-center w-10 h-10">
+                      <img
+                        src={tech.icon}
+                        alt={tech.name + " icon"}
+                        className="w-7 h-7 object-contain"
+                        style={{ width: '28px', height: '28px' }}
+                      />
                     </div>
                     <span className="text-xs font-medium">{tech.name}</span>
                   </motion.div>
